@@ -1,25 +1,33 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
+  "manifest_version": 2,
+
+  "name": "Backflip",
+  "description": "Extension for backlog",
+  "version": "0.1",
+
+  "browser_action": {
+  },
+
+  "content_scripts": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "matches": ["https://disco-cr.backlog.jp/*"],
+      "js": [
+        "main.js",
+        "index.js"
+      ],
+      "css": [
+        "style.css"
+      ]
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+
+  "icons": {
+    "32": "icon.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
 }
