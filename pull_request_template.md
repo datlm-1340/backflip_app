@@ -1,0 +1,3 @@
+Adding a pull request template to your project helps add clarity around contributing guidelines. The template helps enforce consistency and transparency around contributions to your code base. By supplementing your pull request with a detailed description, you help the contributor aggregate their work into a meaningful summary while providing more context for the code reviewer.
+
+This repo was created to share properties of a pull request description we consider to be useful during our code review process. We've taken some time to split these templates based on the type of project (e.g backend, frontend, open source library, etc...). Please feel free to use these templates within your own projects, and share with us by contributing to this project.
